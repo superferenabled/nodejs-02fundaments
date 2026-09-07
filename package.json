@@ -1,0 +1,12 @@
+{
+  "name": "02bases",
+  "version": "0.0.1",
+  "description": "warm up app for node",
+  "license": "ISC",
+  "author": "Fernando Castillo",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
