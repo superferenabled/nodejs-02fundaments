@@ -6,15 +6,15 @@
 // const {uuidv4, getAge} = require('./plugins')
 // const id = 1;
 
-const { buildLogger } = require("./plugins");
+// const { buildLogger } = require("./plugins");
 
 // const { getPokemonById } = require("./js-foundation/06-promises");
 
 // getPokemonById(25).then((pokemon) => console.log({ pokemon }));
 
-const logger = buildLogger('app.js');
-logger.log('yo yo!');
-logger.error('falio ferga!');
+// const logger = buildLogger('app.js');
+// logger.log('yo yo!');
+// logger.error('falio ferga!');
 
 // getUserById(id, (error, user) => {
 //   if(error) {

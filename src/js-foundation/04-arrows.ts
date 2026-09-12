@@ -9,7 +9,7 @@ const users = [
   },
 ];
 
-const getUserById = (id, cb) => {
+const getUserById = (id: number, cb: Function) => {
   const user = users.find((user) => user.id === id);
   !user ? cb(new Error(`No user found with the id: ${id}`)) : cb(null, user);
 };

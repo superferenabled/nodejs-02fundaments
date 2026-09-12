@@ -9,7 +9,7 @@ const users = [
     }
 ]
 
-const getUserById = function (id, cb) {
+const getUserById = function (id: number, cb: Function) {
   try {
     const user = users.find(function (user) {
       return user.id === id;

@@ -19,12 +19,12 @@ logger.add(
   }),
 );
 
-const buildLogger = (service) => {
+const buildLogger = (service: string) => {
   return {
-    log: (message) => {
+    log: (message: string) => {
       logger.log("info", message, service);
     },
-    error: (message) => {
+    error: (message: string) => {
         logger.error("error", {message, service});
     }
   };
