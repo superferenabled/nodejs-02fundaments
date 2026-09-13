@@ -1,11 +1,6 @@
-const { getAge } = require("./get-age.plugin");
-const { uuidv4 } = require("./get-uuid.plugin");
-const { httpClientPlugin: http } = require("./http-client.plugin");
-const buildLogger = require("./logger.plugin");
+import { getAge } from "./get-age.plugin.ts";
+import { uuidv4 } from "./get-uuid.plugin.ts";
+import { httpClientPlugin as http } from "./http-client.plugin.ts";
+import { buildLogger } from "./logger.plugin.ts";
 
-module.exports = {
-    getAge,
-    uuidv4,
-    http,
-    buildLogger
-}
+export { getAge, uuidv4, http, buildLogger };

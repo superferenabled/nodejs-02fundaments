@@ -1,9 +1,5 @@
-const { v4: uuidv4Plugin } = require("uuid");
+import { v4 as uuidv4Plugin } from "uuid";
 
-const uuidv4 = () => {
+export const uuidv4 = () => {
     return uuidv4Plugin()
 };
-
-module.exports = {
-    uuidv4,
-}

@@ -4,8 +4,8 @@
   "description": "warm up app for node",
   "license": "ISC",
   "author": "Fernando Castillo",
-  "type": "commonjs",
-  "main": "app.js",
+  "type": "module",
+  "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./dist && tsc",

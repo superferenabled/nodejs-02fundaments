@@ -9,7 +9,7 @@ const users = [
     }
 ]
 
-const getUserById = function (id: number, cb: Function) {
+export const getUserById = function (id: number, cb: Function) {
   try {
     const user = users.find(function (user) {
       return user.id === id;
@@ -21,8 +21,4 @@ const getUserById = function (id: number, cb: Function) {
   } catch (error) {
     cb(error, null);
   }
-};
-
-module.exports = {
-  getUserById,
 };

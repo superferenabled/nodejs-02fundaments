@@ -1,3 +1,7 @@
+export interface User {
+  id: number,
+  name: string
+}
 const users = [
   {
     id: 1,
@@ -9,11 +13,7 @@ const users = [
   },
 ];
 
-const getUserById = (id: number, cb: Function) => {
+export const getUserById = (id: number, cb: Function) => {
   const user = users.find((user) => user.id === id);
   !user ? cb(new Error(`No user found with the id: ${id}`)) : cb(null, user);
-};
-
-module.exports = {
-  getUserById,
 };
