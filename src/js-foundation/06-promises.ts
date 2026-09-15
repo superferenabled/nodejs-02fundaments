@@ -1,4 +1,4 @@
-import { http } from "../plugins/index.ts";
+import { http } from "../plugins/index";
 
 export const getPokemonById = async (id: number) => {
   try {

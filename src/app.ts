@@ -1,14 +1,14 @@
 // const {emailTemplate} = require('./js-foundation/01-template');
 // require('./js-foundation/02-destructuring');
 // console.log(emailTemplate);
-import { getUserById, type User } from "./js-foundation/04-arrows.ts";
-import {buildMakePerson} from './js-foundation/05-factory.ts';
-import {uuidv4, getAge} from './plugins/index.ts';
+import { getUserById, type User } from "./js-foundation/04-arrows";
+import {buildMakePerson} from './js-foundation/05-factory';
+import {uuidv4, getAge} from './plugins/index';
 const id = 1;
 
-import { buildLogger } from "./plugins/index.ts";
+import { buildLogger } from "./plugins/index";
 
-import { getPokemonById } from "./js-foundation/06-promises.ts";
+import { getPokemonById } from "./js-foundation/06-promises";
 
 getPokemonById(25).then((pokemon) => console.log({ pokemon }));
 
