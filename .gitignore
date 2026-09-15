@@ -1,9 +1,8 @@
 /node_modules/
-
 /dist/
+
 *.log
-
-.DS_Store
-
 .env
 .env.test
+
+.DS_Store
