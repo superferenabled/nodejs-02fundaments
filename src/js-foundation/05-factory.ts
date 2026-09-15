@@ -1,4 +1,9 @@
-export const buildMakePerson = ({uuidv4, getAge}: any) => {
+export interface BuildMakerPersonOptions {
+  uuidv4: () => string;
+  getAge: (birthdate: string) => number;
+}
+
+export const buildMakePerson = ({uuidv4, getAge}: BuildMakerPersonOptions) => {
   return ({ name, birthdate }: {name: string, birthdate: string}) => {
     return {
       id: uuidv4(),

@@ -1,3 +1,5 @@
+import { User } from "./04-arrows";
+
 const users = [
     {
         id: 1,
@@ -9,8 +11,7 @@ const users = [
     }
 ]
 
-export const getUserById = function (id: number, cb: Function) {
-  try {
+export const getUserById = function (id: number, cb: (err?: Error | unknown, user?: User) => void) {
     const user = users.find(function (user) {
       return user.id === id;
     });
@@ -18,7 +19,4 @@ export const getUserById = function (id: number, cb: Function) {
       return cb(new Error(`No user found with the id: ${id}`));
     }
     return cb(null, user);
-  } catch (error) {
-    cb(error, null);
-  }
 };

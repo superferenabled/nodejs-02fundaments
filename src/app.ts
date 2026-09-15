@@ -16,7 +16,7 @@ const logger = buildLogger('app.js');
 logger.log('yo yo!');
 logger.error('falio ferga!');
 
-getUserById(id, (error: Error, user: User) => {
+getUserById(id, (error?: Error | unknown, user?: User) => {
   if(error) {
     throw error;
   }
