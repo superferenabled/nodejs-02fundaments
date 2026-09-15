@@ -1,31 +1,30 @@
-// const {emailTemplate} = require('./js-foundation/01-template');
-// require('./js-foundation/02-destructuring');
-// console.log(emailTemplate);
-import { getUserById, type User } from "./js-foundation/04-arrows";
-import {buildMakePerson} from './js-foundation/05-factory';
-import {uuidv4, getAge} from './plugins/index';
-const id = 1;
 
-import { buildLogger } from "./plugins/index";
 
-import { getPokemonById } from "./js-foundation/06-promises";
+// import { getUserById, type User } from "./js-foundation/04-arrows";
+// import {buildMakePerson} from './js-foundation/05-factory';
+// import {uuidv4, getAge} from './plugins/index';
+// const id = 1;
 
-getPokemonById(25).then((pokemon) => console.log({ pokemon }));
+// import { buildLogger } from "./plugins/index";
 
-const logger = buildLogger('app.js');
-logger.log('yo yo!');
-logger.error('falio ferga!');
+// import { getPokemonById } from "./js-foundation/06-promises";
 
-getUserById(id, (error?: Error | unknown, user?: User) => {
-  if(error) {
-    throw error;
-  }
-  console.log({user})
-});
+// getPokemonById(25).then((pokemon) => console.log({ pokemon }));
 
-const obj = {name: 'Fer Castillo', birthdate: '1988-10-22'};
-const makePerson = buildMakePerson({uuidv4, getAge});
+// const logger = buildLogger('app.js');
+// logger.log('yo yo!');
+// logger.error('falio ferga!');
 
-const person = makePerson(obj)
+// getUserById(id, (error?: Error | unknown, user?: User) => {
+//   if(error) {
+//     throw error;
+//   }
+//   console.log({user})
+// });
 
-console.log(person);
+// const obj = {name: 'Fer Castillo', birthdate: '1988-10-22'};
+// const makePerson = buildMakePerson({uuidv4, getAge});
+
+// const person = makePerson(obj)
+
+// console.log(person);

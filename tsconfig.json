@@ -15,7 +15,7 @@
     
     // For nodejs:
     "lib": ["esnext"],
-    "types": ["node"],
+    "types": ["node", "vitest/globals"],
     // and npm install -D @types/node
     "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions": true,
@@ -46,5 +46,11 @@
     // "noUncheckedSideEffectImports": true,
     // "moduleDetection": "force",
     // "skipLibCheck": true,
-  }
+
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "vitest.config.ts"
+  ]
 }
