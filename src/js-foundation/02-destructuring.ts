@@ -1,11 +1,16 @@
 // console.log(process.env);
 
-const {SHELL} = process.env;
+const { SHELL } = process.env;
 
 // console.log(SHELL);
 
-const characters = ['flash', 'aquaman', 'green lantern', 'batman']
-
+export const characters = [
+  "flash",
+  "aquaman",
+  "green lantern",
+  "batman",
+  "superman",
+];
 
 const [f, a, batman] = characters;
 
