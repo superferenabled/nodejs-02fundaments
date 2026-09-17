@@ -12,7 +12,7 @@
     "test:watch": "vitest",
     "build": "npm run test && npm run clean && tsc",
     "clean": "rimraf ./dist",
-    "start": "npm run build && node dist/app.js",
+    "start": "node dist/app.js",
     "dev": "nodemon"
   },
   "devDependencies": {
