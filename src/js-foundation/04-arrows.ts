@@ -6,11 +6,11 @@ export interface User {
 const users = [
   {
     id: 1,
-    name: "john doe",
+    name: 'john doe',
   },
   {
     id: 2,
-    name: "jane doe",
+    name: 'jane doe',
   },
 ];
 
